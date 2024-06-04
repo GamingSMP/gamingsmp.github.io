@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: Minecraft;
+    src: url("minecraft.otf") format("opentype");
+}
+html {
+    scroll-behavior: smooth;
+}
+.banner {
+    text-shadow: black 10px 10px ;
+}
+
+.ip {
+    text-shadow: none;
+}
+.card {
+    @apply w-[375px] bg-slate-800 p-[15px] h-[420px] rounded-xl hover:scale-[1.05] transition-all md:mb-[0px] mb-[28px]
+}
+
+.card img {
+    @apply w-[350px] h-[250px] object-cover rounded-xl mb-[10px] hover:scale-[1.05] transition-all
+}
+li {
+    @apply inline-block sm:mx-[40px] ml-[38px] mr-[30px] hover:scale-125 
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section#home {
+    height: 69vh;
+}
+li {
+    transition: all .2s ease-in-out;
+    border-bottom: solid 3px #f49a9a00;
+
+}
+.grad {
+    background: linear-gradient(0deg, rgba(26,39,70,1) 13%, rgba(255,255,246,0) 100%);
+
+}
+li:hover{
+    border-bottom: solid 3px #f49a9a;
+}
